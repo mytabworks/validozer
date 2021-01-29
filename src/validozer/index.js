@@ -30,7 +30,7 @@ export default class Validozer {
                 : message;
     }
     
-    static validate(received, rules, attribute, data) {
+    static validate(received = "", rules, attribute, data) {
         const array_rules = rules.split('|');
         let catch_name, catch_param, catch_value;
         const isInvalid = array_rules.some((validation) => { 
