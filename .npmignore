@@ -4,4 +4,4 @@
 
 /dist/*
 !/dist/index.js
-!/dist/indes.d.ts
+!/dist/index.d.ts
