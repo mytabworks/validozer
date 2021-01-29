@@ -1,2 +1,6 @@
 /node_modules
 /.cache
+
+/dist/*
+!/dist/index.js
+!/dist/indes.d.ts
