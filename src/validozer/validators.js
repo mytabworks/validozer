@@ -1,3 +1,5 @@
+import {is} from './utils'
+
 const validators = {
     alpha: {
         regexp: /^[A-Za-z]+$/,
@@ -8,7 +10,7 @@ const validators = {
 
     numeric: {
         exe({received}) {
-            return received.length && isNaN(received);
+            return (is.num(received) || received.length) && isNaN(received);
         },
     },
 
@@ -24,7 +26,7 @@ const validators = {
             const max = parseFloat(parameter);
 
             return !Array.isArray(received) && !isNaN(received)
-                ? received && parseFloat(received) > max
+                ? parseFloat(received) > max
                 : received.length && received.length > max;
         },
     },
@@ -34,14 +36,14 @@ const validators = {
             const min = parseFloat(parameter);
 
             return !Array.isArray(received) && !isNaN(received)
-                ? received && parseFloat(received) < min
+                ? parseFloat(received) < min
                 : received.length && received.length < min;
         },
     },
 
     required: {
         exe({received}) {
-            return !received.length;
+            return is.num(received) ? false : !received.length;
         },
     },
 
