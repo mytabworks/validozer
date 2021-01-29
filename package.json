@@ -1,0 +1,27 @@
+{
+  "name": "validozer",
+  "version": "1.0.0",
+  "description": "a javascript validator inspired by laravel validator",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/validozer/index.js --no-cache --target node --bundle-node-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mytabworks/validozer.git"
+  },
+  "keywords": [
+    "validator",
+    "validatorjs",
+    "laravel"
+  ],
+  "author": "mytabworks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mytabworks/validozer/issues"
+  },
+  "homepage": "https://github.com/mytabworks/validozer#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
