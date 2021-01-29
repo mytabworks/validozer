@@ -143,4 +143,4 @@ The main validation rules which is commonly use.
 | same        | same:<target_field_name>               | it will validate the field until the target field contain the same value. `e.g. same:pass` since most of the time field names are not the same as the labels you can use Aliasing(@) `e.g. same:pass@Password` | The :attribute and :same must match. |
 
 ### License
-MIT Licensed. Copyright (c) fernandto tabamo jr (Mytabworks) 2020.
+MIT Licensed. Copyright (c) fernandto tabamo jr (Mytabworks) 2021.
